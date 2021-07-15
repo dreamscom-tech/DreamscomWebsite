@@ -1,0 +1,41 @@
+.header {
+  width: 100vw;
+}
+.header > nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_image {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+.logo {
+  flex: 1;
+  padding-top: 10px;
+}
+.nav_links {
+  flex: 0.75;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.nav_link.contact-us {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #2f5be7;
+  color: white;
+}
+.nav_link {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.8;
+}
