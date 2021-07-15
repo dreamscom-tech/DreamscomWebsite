@@ -1,0 +1,26 @@
+.header {
+  width: 100vw;
+  background-color: red;
+}
+.header > nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_image {
+  width: 150px;
+  height: 120px;
+  object-fit: contain;
+}
+.logo {
+  flex: 1;
+}
+.nav_links {
+  flex: 2;
+  background-color: green;
+}
+.nav_link {
+  font-size: 18.5px;
+}
