@@ -1,8 +1,9 @@
 .header {
-  width: 100vw;
+  width: 95vw;
+  margin: auto;
 }
 .header > nav {
-  width: 70%;
+  width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-between;
