@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
 import Banner from "../assets/ict-grid.png";
+import "../design/body.css";
 
 class Main extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class Main extends Component {
               rerum laboriosam ducimus!
             </p>
             <div className="">
-              <Button>Services</Button>
+              <button className="services">Find Services</button>
             </div>
           </div>
           <div className="banner_img">
