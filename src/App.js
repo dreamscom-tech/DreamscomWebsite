@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Header from "./components/header";
 import "./app.css";
-import Main from "./components/main";
+// import Main from "./components/main";
+import Services from "./components/services";
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Main />
+        {/* <Main /> */}
+        <Services />
       </>
     );
   }
