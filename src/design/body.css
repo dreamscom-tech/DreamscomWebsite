@@ -13,8 +13,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding-right: 145px;
+}
+.banner_text p {
+  margin: 25px 0px;
+}
+.banner-text-hdr {
+  font-size: 45px;
 }
 .services {
   border: 0;
@@ -44,24 +50,42 @@
 .vision-mission-values {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: 250px;
   border-radius: 5px;
+  flex: 1;
+
   box-shadow: 0px 0px 15px #d9d9d9;
   padding: 25px;
 }
 .vision-mission-values > i {
   font-size: 36px;
 }
-.vision-mission-values > div {
+.vision-mission-values-hdr {
   font-size: 24px;
   font-weight: 600;
+  margin: 15px 0px;
+}
+.mission p {
+  color: #3872bd;
 }
 .vision {
   margin-right: 45px;
 }
+.vision p {
+  color: #3872bd;
+}
 .core-values {
   margin-left: 45px;
+}
+
+.core-values ul {
+  color: #3872bd;
+  margin-left: 20px;
+}
+
+.core-values ul li {
+  margin-bottom: 5px;
 }
 
 /*why us*/
@@ -86,7 +110,8 @@
 
 /*Products*/
 .product-ctr {
-  margin: 75px 0px;
+  width: 75%;
+  margin: 75px auto;
 }
 .product-hdr {
   text-align: center;
@@ -99,7 +124,58 @@
   margin: 15px 0px;
 }
 .product {
+  margin: 45px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-/*Products*/
+.product-content {
+  flex: 1;
+}
+.product-content > img {
+  width: 75%;
+  border-radius: 5px;
+}
+.product-content-hospitalplus > div:nth-child(2) {
+  margin: 20px 0px;
+}
+.product-content-hospitalplus > div:nth-child(1) > span:nth-child(1) {
+  font-size: 32px;
+}
+
+/* customer-quote-message-ctr */
+.customer-quote-ctr {
+  padding: 50px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  background: #fff;
+}
+.customer-quote-up {
+  color: darkblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.customer-quote-down {
+  color: #28a745;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+.customer-quote-down span {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.customer-quote-hdr {
+  padding-top: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #28a745;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid red;
+  width: 80vw;
+  margin: auto;
+}
+/*customer-quote-message-ctr */

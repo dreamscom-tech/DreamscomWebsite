@@ -1,6 +1,8 @@
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
 import Banner from "../assets/ict-grid.png";
+import Hospital from "../assets/hospital.jpg";
+import Feedback from "../assets/feedback-4.png";
 import "../design/body.css";
 
 class Main extends Component {
@@ -13,18 +15,12 @@ class Main extends Component {
       <div className="main">
         <section className="banner">
           <div className="banner_text">
-            <h1>Connecting You to the ICT Grid</h1>
+            <div className="banner-text-hdr">
+              Connecting You to the ICT Grid
+            </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-              enim ipsa dolores ea nesciunt iste perspiciatis velit voluptatibus
-              quae, magnam voluptates consequatur ipsum ipsam odio totam dicta
-              rerum laboriosam ducimus!
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-              enim ipsa dolores ea nesciunt iste perspiciatis velit voluptatibus
-              quae, magnam voluptates consequatur ipsum ipsam odio totam dicta
-              rerum laboriosam ducimus!
+              We Aimed at offering quality,affordable and reliable IT Services
+              to Your organization
             </p>
             <div className="">
               <button className="services">Find Services</button>
@@ -37,33 +33,31 @@ class Main extends Component {
         <section className="vision-mission-values-ctr">
           <div className="vision vision-mission-values">
             <i className="las la-low-vision"></i>
-            <div>Vision</div>
+            <div className="vision-mission-values-hdr">Vision</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              repellat fugit esse veritatis explicabo odit quibusdam earum,
-              unde, architecto accusantium provident, et suscipit. Quisquam est
-              illo debitis alias, deleniti labore.
+              To be a Leading and Preffered Provider of IT Services in Uganda
+              And East Africa
             </p>
           </div>
           <div className="mission vision-mission-values">
             <i className="las la-level-up-alt"></i>
-            <div>Mission</div>
+            <div className="vision-mission-values-hdr">Mission</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              repellat fugit esse veritatis explicabo odit quibusdam earum,
-              unde, architecto accusantium provident, et suscipit. Quisquam est
-              illo debitis alias, deleniti labore.
+              We strive to empower businesses and oranizations with sustainable
+              and affordable IT solutions that foster porductivity, maximize
+              efficiency while reducing operating costs
             </p>
           </div>
           <div className="core-values vision-mission-values">
             <i className="las la-glass-martini"></i>
-            <div>Core Values</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              repellat fugit esse veritatis explicabo odit quibusdam earum,
-              unde, architecto accusantium provident, et suscipit. Quisquam est
-              illo debitis alias, deleniti labore.
-            </p>
+            <div className="vision-mission-values-hdr">Core Values</div>
+            <ul className="">
+              <li>Innovation</li>
+              <li>Team Work</li>
+              <li>Excellence</li>
+              <li>Integrity</li>
+              <li>Commitment to Clients</li>
+            </ul>
           </div>
         </section>
         <section className="why-us">
@@ -91,6 +85,24 @@ class Main extends Component {
             </ul>
           </div>
         </section>
+        <section id="customer-quote">
+          <div className="customer-quote-hdr">Customer Quote</div>
+          <div className="customer-quote-ctr d-flex align-items-center justify-content-center">
+            <img src={Feedback} alt="" height="200px" width="200px" />
+            <div className="customer-quote">
+              <div className="customer-quote-up">
+                "My Organization runs smoothly with IT Services from Dreamscom.
+                <br />
+                We Got quick computer servicing.",
+              </div>
+              <div className="customer-quote-down py-3">
+                <span>Mr. Joseph Kasonga</span> - ED Medical and Community
+                Suppport Organization
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="product-ctr">
           <div className="product-hdr">
             <div className="product-hdr-main">
@@ -102,7 +114,16 @@ class Main extends Component {
           </div>
           <div className="product">
             <div className="product-content">
-              <div className="product-content-hdr">HospitalPlus</div>
+              <img src={Hospital} alt="" />
+            </div>
+            <div className="product-content product-content-hospitalplus">
+              <div className="product-content-hdr">
+                <span>HospitalPlus</span>
+                <br />
+                <span>
+                  Enables you keep hospital Records, Easily &amp; Safely
+                </span>
+              </div>
               <div className="product-content-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
                 accusamus, ab soluta maxime libero laudantium itaque incidunt
@@ -110,11 +131,54 @@ class Main extends Component {
                 accusantium impedit et quis.
               </div>
               <div className="product-content-contact">
-                <button className="services">Find Services</button>
+                <button className="services">Send An Email</button>
               </div>
             </div>
+          </div>
+          <div className="product">
             <div className="product-content">
-              <img src={Banner} alt="" />
+              <img src={Hospital} alt="" />
+            </div>
+            <div className="product-content product-content-hospitalplus">
+              <div className="product-content-hdr">
+                <span>HospitalPlus</span>
+                <br />
+                <span>
+                  Enables you keep hospital Records, Easily &amp; Safely
+                </span>
+              </div>
+              <div className="product-content-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                accusamus, ab soluta maxime libero laudantium itaque incidunt
+                magni beatae? Maxime exercitationem illo illum quasi, ea sequi
+                accusantium impedit et quis.
+              </div>
+              <div className="product-content-contact">
+                <button className="services">Send An Email</button>
+              </div>
+            </div>
+          </div>
+          <div className="product">
+            <div className="product-content">
+              <img src={Hospital} alt="" />
+            </div>
+            <div className="product-content product-content-hospitalplus">
+              <div className="product-content-hdr">
+                <span>HospitalPlus</span>
+                <br />
+                <span>
+                  Enables you keep hospital Records, Easily &amp; Safely
+                </span>
+              </div>
+              <div className="product-content-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                accusamus, ab soluta maxime libero laudantium itaque incidunt
+                magni beatae? Maxime exercitationem illo illum quasi, ea sequi
+                accusantium impedit et quis.
+              </div>
+              <div className="product-content-contact">
+                <button className="services">Send An Email</button>
+              </div>
             </div>
           </div>
         </section>

@@ -1,0 +1,33 @@
+footer {
+  background-color: #2d3748;
+  height: 40vh;
+  color: rgba(255, 255, 255, 0.45);
+}
+.footer-ctr {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content > div:nth-child(1) {
+  margin-top: 20px;
+  font-size: 17.5px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 15px 0px;
+}
+.footer-content > div:nth-child(2) {
+  margin: 20px 0px;
+}
+.footer-content > div:nth-child(2) span i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+.footer-content li {
+  margin: 15px;
+}
