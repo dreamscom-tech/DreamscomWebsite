@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jpg";
 import "../design/header.css";
 
@@ -12,23 +13,22 @@ class header extends Component {
       <>
         <header className="header">
           <nav>
-            <div className="logo">
-              <img src={Logo} alt="DREAMSCOM" className="logo_image" />
-            </div>
+            <Link to="/">
+              <div className="logo">
+                <img src={Logo} alt="DREAMSCOM" className="logo_image" />
+              </div>
+            </Link>
+
             <div className="nav_links">
               <span className="nav_link">Overview</span>
               <span className="nav_link">Services</span>
               <span className="nav_link">Products</span>
               <span className="nav_link">The Team</span>
-              <span className="nav_link contact-us">
-                <span>Contact Us</span>
-              </span>
-              {/* <Button
-                variant="contained"
-                style={{ backgroundColor: "#2f5be7", color: "white" }}
-              >
-                Contact Us
-              </Button> */}
+              <Link to="/contacts">
+                <span className="nav_link contact-us">
+                  <span>Contact Us</span>
+                </span>
+              </Link>
             </div>
           </nav>
         </header>

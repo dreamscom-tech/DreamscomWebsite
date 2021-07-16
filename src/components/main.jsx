@@ -1,5 +1,5 @@
-import { Button } from "@material-ui/core";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Banner from "../assets/ict-grid.png";
 import Hospital from "../assets/hospital.jpg";
 import Feedback from "../assets/feedback-4.png";
@@ -23,7 +23,9 @@ class Main extends Component {
               to Your organization
             </p>
             <div className="">
-              <button className="services">Find Services</button>
+              <Link to="/services">
+                <button className="services">Find Services</button>
+              </Link>
             </div>
           </div>
           <div className="banner_img">

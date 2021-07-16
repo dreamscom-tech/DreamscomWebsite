@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Header from "../components/header";
-import Service from "../components/services";
 import Footer from "../components/footer";
+import Contacts from "../components/contact";
 
-class Services extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,11 +12,11 @@ class Services extends Component {
     return (
       <>
         <Header />
-        <Service />
+        <Contacts />
         <Footer />
       </>
     );
   }
 }
 
-export default Services;
+export default Contact;
