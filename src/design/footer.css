@@ -31,3 +31,15 @@ footer {
 .footer-content li {
   margin: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: fit-content;
+    padding: 0px 50px;
+  }
+  .footer-ctr {
+    width: 95%;
+    flex-direction: column;
+    /* margin: 50px; */
+  }
+}

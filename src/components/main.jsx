@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Banner from "../assets/ict-grid.png";
 import Hospital from "../assets/hospital.jpg";
 import Feedback from "../assets/feedback-4.png";
+import School from "../assets/school.png";
+import Elearning from "../assets/elearning.png";
 import "../design/body.css";
 
 class Main extends Component {
@@ -85,9 +87,9 @@ class Main extends Component {
             </ul>
           </div>
         </section>
-        <section id="customer-quote">
+        <section className="customer-quote">
           <div className="customer-quote-hdr">Customer Quote</div>
-          <div className="customer-quote-ctr d-flex align-items-center justify-content-center">
+          <div className="customer-quote-ctr">
             <img src={Feedback} alt="" height="200px" width="200px" />
             <div className="customer-quote">
               <div className="customer-quote-up">
@@ -95,7 +97,7 @@ class Main extends Component {
                 <br />
                 We Got quick computer servicing.",
               </div>
-              <div className="customer-quote-down py-3">
+              <div className="customer-quote-down">
                 <span>Mr. Joseph Kasonga</span> - ED Medical and Community
                 Suppport Organization
               </div>
@@ -125,20 +127,17 @@ class Main extends Component {
                 </span>
               </div>
               <div className="product-content-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-                accusamus, ab soluta maxime libero laudantium itaque incidunt
-                magni beatae? Maxime exercitationem illo illum quasi, ea sequi
-                accusantium impedit et quis.
+                Hospital Plus is an information system that Keeps hospital
+                Records, Improves communication flow between different
+                departments of a hospital. The system also Enables you to create
+                Reports after a given period of time.
               </div>
               <div className="product-content-contact">
-                <button className="services">Send An Email</button>
+                <button className="services">Send a Request</button>
               </div>
             </div>
           </div>
           <div className="product">
-            <div className="product-content">
-              <img src={Hospital} alt="" />
-            </div>
             <div className="product-content product-content-hospitalplus">
               <div className="product-content-hdr">
                 <span>HospitalPlus</span>
@@ -157,10 +156,13 @@ class Main extends Component {
                 <button className="services">Send An Email</button>
               </div>
             </div>
+            <div className="product-content">
+              <img src={School} alt="" />
+            </div>
           </div>
           <div className="product">
             <div className="product-content">
-              <img src={Hospital} alt="" />
+              <img src={Elearning} alt="" />
             </div>
             <div className="product-content product-content-hospitalplus">
               <div className="product-content-hdr">
