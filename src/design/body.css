@@ -188,9 +188,7 @@
     flex-direction: column;
     width: 95%;
   }
-  .why-us {
-    /* width: 95%; */
-  }
+
   .why-us-li {
     display: flex;
     justify-content: space-around;

@@ -1,5 +1,5 @@
-import { Button } from "@material-ui/core";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jpg";
 import "../design/header.css";
 import Nav from "./Nav";
@@ -23,17 +23,22 @@ class header extends Component {
         <Nav />
         <header className="header">
           <nav>
-            <div className="logo">
-              <img src={Logo} alt="DREAMSCOM" className="logo_image" />
-            </div>
+            <Link to="/">
+              <div className="logo">
+                <img src={Logo} alt="DREAMSCOM" className="logo_image" />
+              </div>
+            </Link>
+
             <div className="nav_links">
               <span className="nav_link">Overview</span>
               <span className="nav_link">Services</span>
               <span className="nav_link">Products</span>
               <span className="nav_link">The Team</span>
-              <span className="nav_link contact-us">
-                <span>Contact Us</span>
-              </span>
+              <Link to="/contacts">
+                <span className="nav_link contact-us">
+                  <span>Contact Us</span>
+                </span>
+              </Link>
             </div>
             <label
               htmlFor="nav-toggle"

@@ -13,7 +13,7 @@ class Footer extends Component {
           <div className="footer-content">
             <div className="">Dreamscom Technologies LTD</div>
             <div className="">
-              Plot 19 Maruzi Street Bygon Building
+              Plot 43 Obote Avenue NSSF Building
               <br />
               <br />
               P.O Box 130, Lira Uganda

@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
-import Header from "./components/header";
-import Main from "./components/main";
-import Footer from "./components/footer";
 import "./app.css";
 import "line-awesome/dist/line-awesome/css/line-awesome.css";
 import Home from "./pages/home";
 import Services from "./pages/services";
-import Contacts from "./pages/contacts";
+import Contacts from "./pages/contact";
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +15,6 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <Header />
-        <Main />
-        <Footer /> */}
         <BrowserRouter>
           <div>
             <Switch>
