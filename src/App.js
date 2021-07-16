@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Header from "./components/header";
 import "./app.css";
 // import Main from "./components/main";
-import Services from "./components/services";
+// import Services from "./components/services";
+import Contact from "./components/contact";
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends Component {
       <>
         <Header />
         {/* <Main /> */}
-        <Services />
+        <Contact />
       </>
     );
   }

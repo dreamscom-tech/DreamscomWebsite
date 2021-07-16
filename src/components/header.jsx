@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import React, { Component } from "react";
 import Logo from "../assets/logo.jpg";
 import "../design/header.css";
