@@ -47,28 +47,30 @@ class Contact extends Component {
             <div className="contact-right">
               <h3>Reach Us</h3>
               <table>
-                <tr>
-                  <td>Email</td>
-                  <td>dreamscomtechnologies@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Phonenumber</td>
-                  <td>
-                    +256 773 002475
-                    <br />
-                    +256 709857117
-                  </td>
-                </tr>
-                <tr>
-                  <td>Address</td>
-                  <td>
-                    Plot 43 NSSF Building
-                    <br />
-                    Obote Avenue
-                    <br />
-                    Lira, Uganda
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Email</td>
+                    <td>dreamscomtechnologies@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Phonenumber</td>
+                    <td>
+                      +256 773 002475
+                      <br />
+                      +256 709857117
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Address</td>
+                    <td>
+                      Plot 43 NSSF Building
+                      <br />
+                      Obote Avenue
+                      <br />
+                      Lira, Uganda
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

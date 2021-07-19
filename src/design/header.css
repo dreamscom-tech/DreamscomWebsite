@@ -19,7 +19,7 @@
   padding-top: 10px;
 }
 .nav_links {
-  flex: 1;
+  flex: 0.5;
   display: flex;
   align-items: baseline;
   justify-content: space-between;

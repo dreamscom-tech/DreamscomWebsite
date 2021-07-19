@@ -1,10 +1,19 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
+//images
 import Banner from "../assets/ict-grid.png";
 import Hospital from "../assets/hospital.jpg";
 import Feedback from "../assets/feedback-4.png";
 import School from "../assets/school.png";
 import Elearning from "../assets/elearning.png";
+//images - our team
+import Smash_Sam from "../assets/Smash-sam.jpg";
+import Smash_Sifudu from "../assets/Smash-sifudu.jpg";
+import Smash_Walter from "../assets/Smash-Walter-Okello.jpg";
+import Smash_Mulindwa from "../assets/Smash-mulindwa.jpg";
+import Smash_placeholder from "../assets/place-holder.jpg";
+
 import "../design/body.css";
 
 class Main extends Component {
@@ -31,6 +40,9 @@ class Main extends Component {
             </div>
           </div>
           <div className="banner_img">
+            {/* <div className="stack-card">
+              
+            </div> */}
             <img src={Banner} alt="" />
           </div>
         </section>
@@ -64,27 +76,31 @@ class Main extends Component {
             </ul>
           </div>
         </section>
-        <section className="why-us">
+        <section className="why-us" id="overview">
           <div className="why-us-hdr">Why Choose Us?</div>
           <div className="why-us-content">
             <ul className="why-us-li">
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                officiis, recusandae dignissimos
+                <b>Quality of delivery: </b> It is the policy of Dreamscom
+                Technologies Ltd to supply and maintain a quality of goods and
+                services which are fully compliant with national and
+                International Standards at all times.
               </li>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                officiis, recusandae dignissimos
+                <b>Customer focus:</b> Customer focus and continuous investment
+                in our personnel, processes and technology are at the forefront
+                of our business planning, enabling reliability and confidence in
+                the results we provide.
               </li>
             </ul>
             <ul className="why-us-li">
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                officiis, recusandae dignissimos
+                <b>Affordable Products &amp; Services:</b> Our Services are very
+                Affordable and of quality
               </li>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                officiis, recusandae dignissimos
+                <b>Committed Team:</b> With our committed team, We offer great
+                service Delivery to our customers.
               </li>
             </ul>
           </div>
@@ -106,8 +122,85 @@ class Main extends Component {
             </div>
           </div>
         </section>
-
-        <section className="product-ctr">
+        <section className="our-team" id="our-team">
+          <div className="our-team-hdr">
+            <div>Meet Our Team</div>
+            <div>...that provides you with quality services</div>
+          </div>
+          <div className="out-team-ctr">
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Walter} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Walter Okello</div>
+                <div className="our-team-role">Managing Director</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Sifudu} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Peter Sifudu</div>
+                <div className="our-team-role">Director - Innovations</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Sam} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Samuel Wekobosya</div>
+                <div className="our-team-role">Software Developer</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Mulindwa} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Mulindwa Denis</div>
+                <div className="our-team-role">Software Developer</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_placeholder} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Ocen Tonny Walter</div>
+                <div className="our-team-role"> Network Enginner</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="product-ctr" id="products">
           <div className="product-hdr">
             <div className="product-hdr-main">
               SoftWare Products We are Proud To Present To You
@@ -135,27 +228,30 @@ class Main extends Component {
                 Reports after a given period of time.
               </div>
               <div className="product-content-contact">
-                <button className="services">Send a Request</button>
+                <Link to="/contacts">
+                  <button className="services">Send An Inquiry</button>
+                </Link>
               </div>
             </div>
           </div>
           <div className="product">
             <div className="product-content product-content-hospitalplus">
               <div className="product-content-hdr">
-                <span>HospitalPlus</span>
+                <span>Inventory Management System</span>
                 <br />
                 <span>
-                  Enables you keep hospital Records, Easily &amp; Safely
+                  For sales, procurement, Stock management and notifications.
                 </span>
               </div>
               <div className="product-content-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-                accusamus, ab soluta maxime libero laudantium itaque incidunt
-                magni beatae? Maxime exercitationem illo illum quasi, ea sequi
-                accusantium impedit et quis.
+                This system can be used in Pharmacies, Hardwares, wholesale
+                shops and any other business that carries out the purchasing and
+                Sales of the commodities.
               </div>
               <div className="product-content-contact">
-                <button className="services">Send An Email</button>
+                <Link to="/contacts">
+                  <button className="services">Send An Inquiry</button>
+                </Link>
               </div>
             </div>
             <div className="product-content">
@@ -168,20 +264,22 @@ class Main extends Component {
             </div>
             <div className="product-content product-content-hospitalplus">
               <div className="product-content-hdr">
-                <span>HospitalPlus</span>
+                <span>SchoolSoft</span>
                 <br />
                 <span>
-                  Enables you keep hospital Records, Easily &amp; Safely
+                  Brings all the manual school tasks to the digital platform.
                 </span>
               </div>
               <div className="product-content-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-                accusamus, ab soluta maxime libero laudantium itaque incidunt
-                magni beatae? Maxime exercitationem illo illum quasi, ea sequi
-                accusantium impedit et quis.
+                It increases the efficiency and accuracy of all work and also
+                helps to save time and resources for the school. So schoolsSoft
+                is now a very basic requirement of every school. All tasks
+                become smooth, communication becomes better and faster.
               </div>
               <div className="product-content-contact">
-                <button className="services">Send An Email</button>
+                <Link to="/contacts">
+                  <button className="services">Send An Inquiry</button>
+                </Link>
               </div>
             </div>
           </div>

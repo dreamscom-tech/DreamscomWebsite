@@ -105,3 +105,15 @@ tr td:first-child {
 tr td {
   padding-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 95%;
+  }
+  .contact-box {
+    flex-direction: column;
+  }
+  .contents {
+    flex-direction: column;
+  }
+}
