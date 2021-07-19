@@ -2,15 +2,25 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jpg";
 import "../design/header.css";
+import Nav from "./Nav";
+import "../design/nav.css";
 
 class header extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      checked: false,
+    };
   }
   render() {
     return (
       <>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          defaultChecked={this.state.checked}
+        />
+        <Nav />
         <header className="header">
           <nav>
             <Link to="/">
@@ -30,6 +40,15 @@ class header extends Component {
                 </span>
               </Link>
             </div>
+            <label
+              htmlFor="nav-toggle"
+              className="toggle-menu"
+              onClick={() => {
+                this.setState({ ...this.state, checked: !this.state.checked });
+              }}
+            >
+              <i className="las la-bars"></i>
+            </label>
           </nav>
         </header>
       </>
