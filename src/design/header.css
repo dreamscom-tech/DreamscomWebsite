@@ -1,6 +1,11 @@
 .header {
-  width: 95vw;
+  width: 100vw;
   margin: auto;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header > nav {
   width: 75%;
@@ -10,8 +15,8 @@
   align-items: center;
 }
 .logo_image {
-  width: 120px;
-  height: 100px;
+  width: 100px;
+  height: 75px;
   object-fit: contain;
 }
 .logo {

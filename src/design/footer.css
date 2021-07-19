@@ -2,6 +2,8 @@ footer {
   background-color: #2d3748;
   height: 40vh;
   color: rgba(255, 255, 255, 0.45);
+  width: 100vw;
+  max-width: 100%;
 }
 .footer-ctr {
   width: 75%;
