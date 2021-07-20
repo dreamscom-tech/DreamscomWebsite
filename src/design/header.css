@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .header > nav {
   width: 75%;

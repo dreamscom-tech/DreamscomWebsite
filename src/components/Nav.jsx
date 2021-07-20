@@ -34,7 +34,7 @@ class Nav extends Component {
                     }
                   >
                     <span className="_a_replaced">
-                      <span className="las la-user-plus"></span>
+                      <span className="las la-file-alt"></span>
                       <span>Overview</span>
                     </span>
                   </HashLink>
@@ -42,7 +42,7 @@ class Nav extends Component {
                 <li>
                   <Link to="/services">
                     <span className="_a_replaced">
-                      <span className="las la-user-edit"></span>
+                      <span className="las la-people-carry"></span>
                       <span>Services</span>
                     </span>
                   </Link>
@@ -55,7 +55,7 @@ class Nav extends Component {
                     }
                   >
                     <span className="_a_replaced">
-                      <span className="las la-user-edit"></span>
+                      <span className="lab la-product-hunt"></span>
                       <span>Products</span>
                     </span>
                   </HashLink>
@@ -68,7 +68,7 @@ class Nav extends Component {
                     }
                   >
                     <span className="_a_replaced">
-                      <span className="las la-user-edit"></span>
+                      <span className="las la-users"></span>
                       <span>The Team</span>
                     </span>
                   </HashLink>
@@ -76,7 +76,7 @@ class Nav extends Component {
                 <li>
                   <Link to="/contacts">
                     <span className="_a_replaced">
-                      <span className="las la-user-edit"></span>
+                      <span className="las la-phone-volume"></span>
                       <span>Contact Us</span>
                     </span>
                   </Link>
