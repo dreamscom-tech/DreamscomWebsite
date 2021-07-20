@@ -1,7 +1,7 @@
 .main {
-  /* margin-top: 45px; */
   margin: auto;
-  width: 95vw;
+  width: 100vw;
+  max-width: 100%;
 }
 .banner {
   display: flex;
@@ -45,12 +45,13 @@
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .vision-mission-values {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-height: fit-content;
   height: 250px;
   border-radius: 5px;
   flex: 1;
@@ -106,6 +107,7 @@
 }
 .why-us-li > li {
   margin: 0px 50px;
+  flex: 1;
 }
 /*why us*/
 
@@ -144,6 +146,69 @@
 .product-content-hospitalplus > div:nth-child(1) > span:nth-child(1) {
   font-size: 32px;
 }
+/*our team*/
+.our-team {
+  width: 75%;
+  margin: 25px auto;
+}
+.our-team > div:first-child {
+  margin: 45px 0px;
+  text-align: center;
+}
+.our-team > div:first-child > div:first-child {
+  font-size: 35px;
+  margin: 5px 0px;
+}
+.our-team > div:first-child > div:nth-child(2) {
+  font-style: italic;
+  font-size: 14px;
+  /* font-size: 35px; */
+  /* margin: 15px 0px; */
+}
+.our-team > div:nth-child(2) {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-team-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.our-team-card > div:nth-child(1) {
+  flex: 1;
+  margin-right: 15px;
+}
+.our-team-card > div:nth-child(2) {
+  flex: 2;
+  margin: 5px;
+}
+.our-team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.our-team-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+.our-team-role {
+  font-size: 15px;
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+.our-team-social > i {
+  color: #3872bd;
+  font-size: 20px;
+  margin-right: 5px;
+}
+/*our team*/
 
 /* customer-quote-message-ctr */
 .customer-quote {
@@ -183,6 +248,11 @@
 }
 /*customer-quote-message-ctr */
 
+@media only screen and (max-width: 1024px) {
+  .vision-mission-values {
+    height: fit-content;
+  }
+}
 @media only screen and (max-width: 768px) {
   .banner {
     flex-direction: column;
@@ -198,6 +268,15 @@
   }
   .why-us-li > li {
     margin: 15px 0px;
+  }
+  .our-team {
+    width: 95%;
+  }
+  .our-team > div:nth-child(2) {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
   }
   .customer-quote {
     width: 95%;
