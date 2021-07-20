@@ -12,8 +12,9 @@ class Contact extends Component {
         <div className="contact">
           <h1>Connect With Us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae, nihil blanditiis placeat similique itaque labore
+            Our call centres are available 24/7, and our customer service agents
+            will happily assist with your enquiries and guide you through all of
+            our services and offers
           </p>
           <div className="contact-box">
             <div className="contact-left">
@@ -54,9 +55,9 @@ class Contact extends Component {
                 <tr>
                   <td>Phonenumber</td>
                   <td>
-                    +256 773 002475
+                    +256 772 280228
                     <br />
-                    +256 709857117
+                    +256 788 328170
                   </td>
                 </tr>
                 <tr>
