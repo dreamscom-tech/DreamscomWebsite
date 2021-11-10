@@ -7,11 +7,14 @@ import Hospital from "../assets/hospital.jpg";
 import Feedback from "../assets/feedback-4.png";
 import School from "../assets/school.png";
 import Elearning from "../assets/elearning.png";
+
 //images - our team
 import Smash_Sam from "../assets/Smash-sam.jpg";
 import Smash_Sifudu from "../assets/Smash-sifudu.jpg";
 import Smash_Walter from "../assets/Smash-Walter-Okello.jpg";
 import Smash_Mulindwa from "../assets/Smash-mulindwa.jpg";
+import Smash_Daisy from "../assets/Smash-Daisy.jpeg";
+import Smash_Innocent from "../assets/Smash_Innocent.jpeg";
 import Smash_placeholder from "../assets/place-holder.jpg";
 
 import "../design/body.css";
@@ -191,6 +194,34 @@ class Main extends Component {
               <div>
                 <div className="our-team-name">Ocen Tonny Walter</div>
                 <div className="our-team-role"> Network Enginner</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Innocent} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Innocent Oku</div>
+                <div className="our-team-role"> Hardware Engineer</div>
+                <div className="our-team-social">
+                  <i className="lab la-linkedin"></i>
+                  <i className="lab la-twitter"></i>
+                  <i className="las la-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div className="our-team-card">
+              <div className="">
+                <img src={Smash_Daisy} alt="" />
+              </div>
+              <div>
+                <div className="our-team-name">Pimer Daisy</div>
+                <div className="our-team-role">Project Manager</div>
                 <div className="our-team-social">
                   <i className="lab la-linkedin"></i>
                   <i className="lab la-twitter"></i>
